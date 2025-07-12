@@ -142,25 +142,25 @@ def main():
     player.play_frequency([350, 440], 1.5)
 
     # Dial 2053648254
-    player.play_frequency([697, 1336, 350, 440], 0.25) # 2
-    player.play_frequency([350, 440], 0.04)
-    player.play_frequency([941, 1336, 350, 440], 0.25) # 0
-    player.play_frequency([350, 440], 0.04)
-    player.play_frequency([770, 1336], 0.25) # 5
-    time.sleep(0.04)
-    player.play_frequency([697, 1477], 0.25) # 3
-    time.sleep(0.04)
-    player.play_frequency([770, 1477], 0.25) # 6
-    time.sleep(0.04)
-    player.play_frequency([770, 1209], 0.25) # 4
-    time.sleep(0.04)
-    player.play_frequency([852, 1336], 0.25) # 8
-    time.sleep(0.04)
-    player.play_frequency([697, 1336], 0.25) # 2
-    time.sleep(0.04)
-    player.play_frequency([770, 1336], 0.25) # 5
-    time.sleep(0.04)
-    player.play_frequency([770, 1209], 0.25) # 4
+    player.play_frequency([697, 1336, 350, 440], 0.2) # 2
+    player.play_frequency([350, 440], 0.07)
+    player.play_frequency([941, 1336, 350, 440], 0.2) # 0
+    player.play_frequency([350, 440], 0.07)
+    player.play_frequency([770, 1336], 0.2) # 5
+    time.sleep(0.07)
+    player.play_frequency([697, 1477], 0.2) # 3
+    time.sleep(0.07)
+    player.play_frequency([770, 1477], 0.2) # 6
+    time.sleep(0.07)
+    player.play_frequency([770, 1209], 0.2) # 4
+    time.sleep(0.07)
+    player.play_frequency([852, 1336], 0.2) # 8
+    time.sleep(0.07)
+    player.play_frequency([697, 1336], 0.2) # 2
+    time.sleep(0.07)
+    player.play_frequency([770, 1336], 0.2) # 5
+    time.sleep(0.07)
+    player.play_frequency([770, 1209], 0.2) # 4
 
     # Pause
     time.sleep(2)
@@ -179,19 +179,20 @@ def main():
 
     # CL
     player.play_frequency(975, 0.1)
-    player.play_freq_rand([[950, 1300]], num_numbers=3, duration=0.9, volume=0.5, step=40)
+    player.play_freq_rand([[950, 1300]], num_numbers=3, duration=0.9, volume=0.5, step=45)
     player.play_frequency(975, 0.05)
 
     # Pause
-    time.sleep(0.05)
+    time.sleep(0.07)
 
     # MS
     player.play_frequency(1650, 0.08)
-    player.play_freq_rand([[1600, 2000]], num_numbers=3, duration=0.85, volume=0.5, step=45)
+    player.play_freq_rand([[1600, 2000]], num_numbers=3, duration=0.85, volume=0.5, step=50)
+    player.play_frequency(1650, 0.02)
 
     # ACK
     player.play_frequency(975, 0.09)
-    player.play_freq_rand([[950, 1300]], num_numbers=3, duration=0.2, volume=0.5, step=18)
+    player.play_freq_rand([[950, 1300]], num_numbers=3, duration=0.15, volume=0.5, step=17)
     player.play_frequency(975, 0.03)
 
     # Pause
